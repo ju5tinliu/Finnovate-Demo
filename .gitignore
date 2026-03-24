@@ -7,10 +7,31 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# Debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +43,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local env files
+.env*.local
+*.pem
+
+# TypeScript
+*.tsbuildinfo
+
+# Generated native folders (prebuild)
+/ios
+/android
